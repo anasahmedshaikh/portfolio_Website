@@ -210,7 +210,7 @@ if navigation == "Skills":
         with col1:
             st.write(skill)
         progress_bar = f'<div style="width: {level}%;"><b>{level}%</b></div>'
-        col2.markdown(f'<div class="progress-bar">{progress_bar}</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="progress-bar">{progress_bar}</div>', unsafe_allow_html=True)
 
 if navigation == "Projects":
     st.write("### :book: Projects")
