@@ -7,7 +7,7 @@ from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
 from streamlit_javascript import st_javascript
 
-st.set_page_config(page_title="Portfolio", layout="centered", page_icon=":job:")
+st.set_page_config(page_title="Portfolio", layout="centered", page_icon=":pencil2:")
 api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-1.5-flash')
