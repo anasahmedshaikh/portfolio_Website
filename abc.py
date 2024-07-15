@@ -204,13 +204,12 @@ if navigation == "Skills":
 
     # Display skills with progress bars
     st.markdown(progress_bar_styles, unsafe_allow_html=True)
-    col1, col2 = st.columns(2)
+    # col1, col2 = st.columns(2)
 
     for skill, level in skills.items():
-        with col1:
-            st.write(skill)
-            progress_bar = f'<div style="width: {level}%;"><b>{level}%</b></div>'
-            st.markdown(f'<div class="progress-bar">{progress_bar}</div>', unsafe_allow_html=True)
+        st.write(skill)
+        progress_bar = f'<div style="width: {level}%;"><b>{level}%</b></div>'
+        st.markdown(f'<div class="progress-bar">{progress_bar}</div>', unsafe_allow_html=True)
 
 if navigation == "Projects":
     st.write("### :book: Projects")
