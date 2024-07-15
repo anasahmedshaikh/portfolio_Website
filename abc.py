@@ -332,7 +332,7 @@ if navigation == "Contact":
         },
         {
             "title": "Instagram",
-            "image": "images/instagram.jpg",
+            "image": "images/instagram.png",
             "link": "https://www.instagram.com/anasthesia._/"
         },
     ]
