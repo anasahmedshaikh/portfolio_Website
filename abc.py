@@ -18,7 +18,7 @@ def css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-css("assets/style.css")
+# css("assets/style.css")
 
 with st.sidebar:
     navigation = option_menu(
