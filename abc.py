@@ -127,7 +127,7 @@ if navigation == "Chat Assistant":
 
             anas's Email: anas@codtecs.com
             anas's Facebook: https://www.facebook.com/profile.php?id=61551632792759
-            anas's Instagram: https://www.instagram.com/Anasthesia_./
+            anas's Instagram: https://www.instagram.com/anasthesia_./
             anas's Linkedin: https://www.linkedin.com/in/anas-ahmed-shaikh
             anas's Github :https://github.com/anasahmedshaikh 
             ""
