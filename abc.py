@@ -66,7 +66,6 @@ with st.sidebar:
     )
 
 if navigation == "Home":
-    st.set_page_config(page_title="Home")
     text = "WELCOME TO MY PORTFOLIO WEBSITE.."
     st.title(text)
 
@@ -99,7 +98,6 @@ if navigation == "Home":
         st.image(profile)
 
 if navigation == "Chat Assistant":
-    st.set_page_config(page_title="Assistant")
     anas_persona = """You are Anas AI bot and your name is anas's assistant .You help peopleby answering the user questions about anas 
     and solve their problems and chat with them.first understand user intent and than Answer as anas's assistant . dont answer in 
     second or third person. If you don't know the info about anas or than simply say  "That's 
@@ -167,7 +165,6 @@ if navigation == "Chat Assistant":
         st.session_state.messages.append({"role": "assistant", "content": text_response})
 
 if navigation == "Skills":
-    st.set_page_config(page_title="Skills")
     skills = {
         "Python": 70,
         "Typescript": 70,
@@ -213,7 +210,6 @@ if navigation == "Skills":
         st.markdown(f'<div class="progress-bar">{progress_bar}</div>', unsafe_allow_html=True)
 
 if navigation == "Projects":
-    st.set_page_config(page_title="Projects")
     st.write("### :book: Projects")
     st.markdown(
         """
@@ -261,7 +257,6 @@ if navigation == "Projects":
         st_javascript(js)
 
 if navigation == "Certifications":
-    st.set_page_config(page_title="Certifications")
     st.write("### :medal: Certifications")
     st.markdown(
         """
@@ -308,7 +303,6 @@ if navigation == "Certifications":
         st.markdown(f"[{cards[1]['title']}]({cards[1]['link']})")
 
 if navigation == "Contact":
-    st.set_page_config(page_title="Contact Me")
     st.write("### :mailbox_closed: Get In Touch With Me!")
 
     contact_form = """
