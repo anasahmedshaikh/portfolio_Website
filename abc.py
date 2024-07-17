@@ -6,8 +6,8 @@ from PIL import Image
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
 from streamlit_javascript import st_javascript
-
-st.set_page_config(page_title="Portfolio", layout="centered", page_icon=":pencil2:")
+title = "Home"
+st.set_page_config(page_title=title, layout="centered", page_icon=":pencil2:")
 api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-1.5-flash')
@@ -66,6 +66,7 @@ with st.sidebar:
     )
 
 if navigation == "Home":
+    title = "home"
     text = "WELCOME TO MY PORTFOLIO WEBSITE.."
     st.title(text)
 
@@ -98,6 +99,7 @@ if navigation == "Home":
         st.image(profile)
 
 if navigation == "Chat Assistant":
+    title = "Assistant"
     anas_persona = """You are Anas AI bot and your name is anas's assistant .You help peopleby answering the user questions about anas 
     and solve their problems and chat with them.first understand user intent and than Answer as anas's assistant . dont answer in 
     second or third person. If you don't know the info about anas or than simply say  "That's 
@@ -165,13 +167,12 @@ if navigation == "Chat Assistant":
         st.session_state.messages.append({"role": "assistant", "content": text_response})
 
 if navigation == "Skills":
-
+    title = "Skills"
     skills = {
-        "Python": 80,
-        "Data Analysis": 80,
+        "Python": 70,
+        "Typescript": 70,
         "Visualization": 85,
-        "Machine Learning": 75,
-        "Deep Learning": 70,
+        "Markeeting": 55,
         "SQL": 70,
         "Flask": 80,
         "HTML": 85,
@@ -212,6 +213,7 @@ if navigation == "Skills":
         st.markdown(f'<div class="progress-bar">{progress_bar}</div>', unsafe_allow_html=True)
 
 if navigation == "Projects":
+    title = "Projects"
     st.write("### :book: Projects")
     st.markdown(
         """
@@ -259,6 +261,7 @@ if navigation == "Projects":
         st_javascript(js)
 
 if navigation == "Certifications":
+    title = "Certifications"
     st.write("### :medal: Certifications")
     st.markdown(
         """
@@ -305,6 +308,7 @@ if navigation == "Certifications":
         st.markdown(f"[{cards[1]['title']}]({cards[1]['link']})")
 
 if navigation == "Contact":
+    titlt = "Contact Me"
     st.write("### :mailbox_closed: Get In Touch With Me!")
 
     contact_form = """
