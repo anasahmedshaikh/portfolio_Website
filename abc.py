@@ -7,18 +7,6 @@ from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
 from streamlit_javascript import st_javascript
 
-st.markdown(
-    "<head><!-- Hotjar Tracking Code for anasahmed.streamlit.app -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:5062719,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script></head>",unsafe_allow_html=true):
 st.set_page_config(page_title="Portfolio", layout="centered", page_icon=":pencil2:")
 api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
