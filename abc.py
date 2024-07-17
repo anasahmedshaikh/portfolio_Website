@@ -160,7 +160,7 @@ if navigation == "Chat Assistant":
         text_response = response.text
 # Display assistant response in chat message container
         with st.chat_message("assistant"):
-            st.write_stream(text_response)
+            st.write(text_response)
 # Add assistant response to chat history
         st.session_state.messages.append({"role": "assistant", "content": text_response})
 
